@@ -25,15 +25,15 @@ body {
     background: rgb(255,250,205);
     background: radial-gradient(circle, rgba(255,250,205,1) 0%, rgba(248,245,228,1) 100%);
     height: 100%; 
-    margin: 0; 
+    /* margin-top: 5rem;
+    margin-bottom: 5rem;  */
     display: flex; 
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition: opacity 0.5s ease-out; 
-    opacity: 1;
-    transform: translate(0, 0);
     overflow: hidden;
+    transform: scale(0.875);
+    transform-origin: center;
 }
 
 body a{
@@ -76,11 +76,15 @@ p3 {
     color: #fff;
     margin-left: .5em;
     font-family: 'Michroma';
-    animation:blinkingText .875s infinite;
     margin: auto;
 }
+
+
+#button p3 {
+    animation: blink 0.7s steps(2, start) infinite;
+  }
     
-@keyframes blinkingText{
+@keyframes blink {
     0% { 
         color: #fff; 
     }
@@ -97,16 +101,17 @@ p3 {
         color: #fff; 
     }
 }
+
     
 
 #socials {
     width: 30%;
     display: flex;
-    justify-content: flex-end; /* Alinha o conteúdo à direita */
-    align-items: center; /* Mantém os itens alinhados verticalmente */
+    justify-content: flex-end; 
+    align-items: center;
     padding: 0;
     margin-right: 0.5rem;
-    gap: 1rem;
+    gap: 0.75rem;
 }
 
 #socials i {
@@ -265,6 +270,17 @@ mark {
     font-size: 1.05rem;
     margin: 0;
 }
+
+  /* Efeito de piscar no cursor
+@keyframes blink {
+    50% {
+      opacity: 0;
+    }
+}
+
+#button p3 {
+    animation: blink 0.7s steps(2, start) infinite;
+} */
 
 /* noturnooooo */
 .dark-mode {
