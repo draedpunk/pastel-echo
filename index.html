@@ -9,12 +9,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ab7b1ae429.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="welcome-container">
-        ☆ WELCOME TO MY SiTE! ☆
+        <!-- ☆ WELCOME TO MY SiTE! ☆ -->
+        <div id="button">
+            <span style="color: white; font-size: .1em;">.</span><i class="fas fa-globe" 
+                style="font-size:20px; color:#773ca3;"></i>
+                <span style="color: white;">-</span><text style="color:#919191;display: flex;
+                align-items: center; font-size: .875rem; font-family: 'Michroma';">
+                &nbsp;www.pastel_echo.net <span style="color: white;">-</span><p3>&nbsp;|</p3>
+        </div>
+        <div id="socials">
+            <a href="https://github.com/draedpunk" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/pamela-rodrigues-1a5463323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+                target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <i class="fa-solid fa-moon"></i>
+        </div>
     </div>
+
     <div id="main-container">
 
         <div class="main-container-inside">
@@ -24,8 +44,8 @@
             <!-- <div id="name">PAMELA</div> -->
             <div class="info-space">
                 <div id="name">PAMELA</div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Illum quaerat minus totam eius. 
+                Seja bem-vindo a este pequeno site no qual voce poderá conhecer mais
+                sobre mim e sobre os meus projetos. 
             </div>
             <img src="./css/img/blurple-butterfly-png.png" alt="butterplay">  
         </div>
@@ -34,22 +54,31 @@
         <div class="main-container-inside-bottom">
 
             <div class="topic-container">
-                <div id="topic-title">More Projects</div>
+                <div id="topic-title">Sobre mim</div>
                 <div class="info-space">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Illum quaerat minus totam eius. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Non earum est illum necessitatibus minus pariatur, ullam autem culpa quae. 
-                    Culpa mollitia ex laudantium doloribus quia ducimus dignissimos totam vero similique. 
+                    Estou no segundo periodo do curso de <b>Analise e Desenvolvimento de Sistemas (ADS)</b>, na CESAR School.<br>
+                    Constantemente em estudo, especialmente em back-end, 
+                    mas tambem gosto de explorar minha criatividade no front-end.<br>
+
                 </div>
             </div>
         
             <div class="topic-container">
-                <div id="topic-title">My Links</div>
+                <div id="topic-title">Meus projetos</div>
                 <div class="info-space">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Illum quaerat minus totam eius. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Non earum est illum necessitatibus minus pariatur, ullam autem culpa quae. 
-                    Culpa mollitia ex laudantium doloribus quia ducimus dignissimos totam vero similique. 
+                    <ul>
+                    <li><mark>1.</mark> <a href="https://draedpunk.github.io/sorteador-numeros/" target="_blank">Sorteador de numeros;</a></li>
+                    <br>
+                    <li><mark>2.</mark> <a href="https://draedpunk.github.io/floral/" target="_blank">Floral;</a></li>
+                    <br>
+                    <li><mark>3.</mark> <a href="#" target="_blank">MyScene;</a></li>
+                    <br>
+                    <li><mark>4.</mark> <a href="https://draedpunk.github.io/pczinho/" target="_blank">Pczinho;</a></li>
+                    <br>
+                    <li><mark>5.</mark> <a href="https://draedpunk.github.io/amigo-secreto/" target="_blank">Jogo do Amigo Secreto;</a></li>
+                    <br>
+                    <li><mark>6.</mark> <a href="https://github.com/draedpunk/jogo_forca_c" target="_blank">Jogo da forca em C.</a></li>
+                </ul>
                 </div>
             </div>
         
@@ -133,6 +162,25 @@
         <audio id="tune" src="https://dl.dropbox.com/s/2qyedd502j5dpmr/Poison%20Girl%20Friend%20-%20Fact%202.mp3" type="audio">
         </audio>
         </div>        
+    <!-- <script src="css\dark_mode.js"></script> -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const socialsDiv = document.getElementById("socials");
+            const themeIcon = socialsDiv.querySelector("i.fa-solid"); // Pega o ícone dentro da div #socials
+            const body = document.body;
+        
+            themeIcon.addEventListener("click", function () {
+                body.classList.toggle("dark-mode"); // Alterna o tema escuro
+        
+                // Alterna os ícones entre lua (noturno) e sol (claro)
+                if (body.classList.contains("dark-mode")) {
+                    themeIcon.classList.replace("fa-moon", "fa-sun"); 
+                } else {
+                    themeIcon.classList.replace("fa-sun", "fa-moon");
+                }
+            });
+        });
+        </script>        
     <script src="css/bubbles.js"></script>
 </body>
 </html>
