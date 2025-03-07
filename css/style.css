@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    cursor: url(https://cur.cursors-4u.net/cursors/cur-6/cur505.cur), auto !important;
 }
 
 html{
@@ -196,8 +197,8 @@ p3 {
 }
 
 #profile-img {
-    width: 33%;
-    height: 100px;
+    width: 40%;
+    height: 30%;
     border-radius: 50%;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 53%, rgba(254,199,244,1) 97%);
