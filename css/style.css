@@ -18,8 +18,7 @@ html{
 @font-face {
     font-family: Excelorate;
     src: url(https://dl.dropbox.com/s/7m991a4hzg4vqt9/excelorate-font%20%281%29.otf);
-    }
-  
+}
 
 body {
     background: rgb(255,250,205);
@@ -101,8 +100,6 @@ p3 {
         color: #fff; 
     }
 }
-
-    
 
 #socials {
     width: 30%;
