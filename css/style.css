@@ -22,11 +22,9 @@ html{
 }
 
 body {
-    background: rgb(255,250,205);
-    background: radial-gradient(circle, rgba(255,250,205,1) 0%, rgba(248,245,228,1) 100%);
+    background: rgb(255,250,212);
+    background: radial-gradient(circle, rgb(255, 250, 212) 0%, rgb(248, 224, 255) 100%);
     height: 100%; 
-    /* margin-top: 5rem;
-    margin-bottom: 5rem;  */
     display: flex; 
     justify-content: center;
     align-items: center;
@@ -125,7 +123,7 @@ p3 {
 
 #main-container {
     width: 35%;
-    height: auto; /* change soon...*/
+    height: 65%; 
     display: inline;
     margin: 5px;
     padding: 1rem;
@@ -172,8 +170,8 @@ p3 {
     display: flex;
     justify-content: space-between;
 }
-
-#main-container img{
+/* butterfly */
+#main-container img{ 
     width: 25%;
     margin: 0.5rem;
     -webkit-filter: drop-shadow(0px 0px 2px #000);
@@ -183,9 +181,10 @@ p3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    gap: 10px; /* Adiciona um espaçamento entre os elementos */
+    gap: 10px;
     width: 100%;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .topic-container {
@@ -197,8 +196,6 @@ p3 {
 }
 
 #profile-img {
-    width: 40%;
-    height: 30%;
     border-radius: 50%;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 53%, rgba(254,199,244,1) 97%);
@@ -206,27 +203,39 @@ p3 {
     padding: 2px;
     margin: 0.5rem;
     -webkit-filter: drop-shadow(0px 0px 2px #000);
-    display: flex; /* Para centralizar a imagem */
+    display: flex; 
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Impede que a imagem vaze */
+    overflow: hidden;
 }
 
 #profile-img img {
     width: 100%; 
-    height: 100%;
-    object-fit: cover; /* Isso faz a imagem se ajustar sem distorcer */
+    height: 20%;
+    object-fit: cover;
     border-radius: 50%; /* Mantém a borda arredondada */
 }
 
-.info-space {
+.info-space-links {
     width: auto;
-    height: auto;
+    height: 70%; 
+    overflow-y: auto;
     background: #FFFFFF8F;
     padding: 0.75rem;
     margin-top: 0.5rem;
     border-radius: 5px;
-    flex: 1;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.info-space, .info-space-name {
+    width: auto;
+    /* height: 70%; */
+    background: #FFFFFF8F;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    /* flex: 1; */
     text-align: center;
     font-size: 0.9rem;
 }
@@ -269,16 +278,6 @@ mark {
     margin: 0;
 }
 
-  /* Efeito de piscar no cursor
-@keyframes blink {
-    50% {
-      opacity: 0;
-    }
-}
-
-#button p3 {
-    animation: blink 0.7s steps(2, start) infinite;
-} */
 
 /* noturnooooo */
 .dark-mode {

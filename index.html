@@ -45,11 +45,11 @@
                 <img src="./css/img/me2phone.jpeg" alt="euu">
             </div>
             <!-- <div id="name">PAMELA</div> -->
-            <div class="info-space">
+            <div class="info-space-name">
                 <div id="name">PAMELA</div>
                 Tenho 23 anos e resido em Recife/PE. Aqui possui um breve resumo sobre mim e meus projetos.
             </div>
-            <img src="./css/img/blurple-butterfly-png.png" alt="butterplay">  
+            <img src="./css/img/blurple-butterfly-png.png" alt="butterfly">  
         </div>
 
         <!-- informations -->
@@ -58,7 +58,7 @@
             <div class="topic-container">
                 <div id="topic-title">Sobre mim</div>
                 <div class="info-space">
-                    Estou no segundo periodo do curso de <b>Analise e Desenvolvimento de Sistemas (ADS)</b>, na CESAR School.<br>
+                    Sou graduanda em <b>Analise e Desenvolvimento de Sistemas (ADS)</b>, na CESAR School.<br>
                     Constantemente em estudo, especialmente em back-end, 
                     mas tambem gosto de explorar minha criatividade no front-end.<br>
 
@@ -67,20 +67,23 @@
         
             <div class="topic-container">
                 <div id="topic-title">Meus projetos</div>
-                <div class="info-space">
+                <div class="info-space-links">
                     <ul>
-                    <li><mark>1.</mark> <a href="https://draedpunk.github.io/sorteador-numeros/" target="_blank">Sorteador de numeros;</a></li>
-                    <br>
-                    <li><mark>2.</mark> <a href="https://draedpunk.github.io/floral/" target="_blank">Floral;</a></li>
-                    <br>
-                    <li><mark>3.</mark> <a href="https://draedpunk.github.io/myScene/" target="_blank">MyScene;</a></li>
-                    <br>
-                    <li><mark>4.</mark> <a href="https://draedpunk.github.io/pczinho/" target="_blank">Pczinho;</a></li>
-                    <br>
-                    <li><mark>5.</mark> <a href="https://draedpunk.github.io/amigo-secreto/" target="_blank">Jogo do Amigo Secreto;</a></li>
-                    <br>
-                    <li><mark>6.</mark> <a href="https://github.com/draedpunk/jogo_forca_c" target="_blank">Jogo da forca em C.</a></li>
-                </ul>
+                        <li><mark>1.</mark> <a href="https://draedpunk.github.io/sorteador-numeros/" target="_blank">
+                            Sorteador de numeros;</a></li>
+                        <br>
+                        <li><mark>2.</mark> <a href="https://draedpunk.github.io/floral/" target="_blank">Floral;</a></li>
+                        <br>
+                        <li><mark>3.</mark> <a href="https://draedpunk.github.io/myScene/" target="_blank">MyScene;</a></li>
+                        <br>
+                        <li><mark>4.</mark> <a href="https://draedpunk.github.io/pczinho/" target="_blank">Pczinho;</a></li>
+                        <br>
+                        <li><mark>5.</mark> <a href="https://draedpunk.github.io/amigo-secreto/" target="_blank">
+                            Jogo do Amigo Secreto;</a></li>
+                        <br>
+                        <li><mark>6.</mark> <a href="https://github.com/draedpunk/jogo_forca_c" target="_blank">
+                            Jogo da forca em C.</a></li>
+                    </ul>
                 </div>
             </div>
         
@@ -120,7 +123,7 @@
          }
         
         .playy, .pausee {
-            background: -webkit-linear-gradient(-90deg, #f3c7fe 40%, #f9dfff 65%, #fff 95%);
+            background: -webkit-linear-gradient(-90deg, #ecd6f1 40%, #cc96d8 65%, #fff 95%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             -webkit-text-stroke: 0.5px #e898fc;
@@ -164,17 +167,16 @@
         <audio id="tune" src="https://dl.dropbox.com/s/2qyedd502j5dpmr/Poison%20Girl%20Friend%20-%20Fact%202.mp3" type="audio">
         </audio>
         </div>        
-    <!-- <script src="css\dark_mode.js"></script> -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const socialsDiv = document.getElementById("socials");
-            const themeIcon = socialsDiv.querySelector("i.fa-solid"); // Pega o ícone dentro da div #socials
+            const themeIcon = socialsDiv.querySelector("i.fa-solid"); 
             const body = document.body;
         
             themeIcon.addEventListener("click", function () {
-                body.classList.toggle("dark-mode"); // Alterna o tema escuro
+                body.classList.toggle("dark-mode"); 
         
-                // Alterna os ícones entre lua (noturno) e sol (claro)
+                
                 if (body.classList.contains("dark-mode")) {
                     themeIcon.classList.replace("fa-moon", "fa-sun"); 
                 } else {
